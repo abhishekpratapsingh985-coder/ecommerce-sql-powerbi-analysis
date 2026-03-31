@@ -1,63 +1,98 @@
-# E-commerce Sales & Marketing Analysis  ( E-commerce Revenue Diagnosis)
+# 📊 E-commerce Data Analysis Project (SQL + Power BI)
 
-## Overview
-This project analyzes e-commerce data to understand sales performance, customer behavior, and marketing efficiency using SQL.
+## 🚀 Project Overview
 
----
-
-## Dataset
-The dataset consists of the following tables:
-
-- customers  
-- orders  
-- order_items  
-- products  
-- marketing_spend  
-- and website_session       #although we didn't include into our business quries.
+This project demonstrates an end-to-end data analysis workflow using SQL and Power BI. The goal was to transform raw e-commerce data into actionable business insights through structured querying and interactive visualization.
 
 ---
 
-## Project Workflow
-1. Imported raw CSV data into SQL database  
-2. Performed data validation and integrity checks  
-3. Created an analysis dataset (`analytics_orders`)  
-4. Conducted exploratory data analysis  
-5. Answered key business questions  
+## 🧠 Key Objectives
+
+* Perform data validation and ensure data integrity
+* Build an analysis-ready dataset using SQL joins and transformations
+* Analyze revenue, profit, and order trends
+* Evaluate marketing performance using ROI
+* Create an interactive dashboard for business decision-making
 
 ---
 
-## Key Business Questions
-- Which product categories generate the most profit?
-- Which Acquisition Channel is Most Valuable ?  
-- Which acquisition channels provide the best ROI?  
-- Which cities contribute the most to revenue?  
-- What is monthly Growth Trend? 
-- Who are the highest value customers?  
-- Which products drive the most profit and should be promoted most?
+## 🛠️ Tools & Technologies
+
+* SQL (Data cleaning, validation, and analysis)
+* Power BI (Dashboard and visualization)
+* CSV datasets (simulated e-commerce data)
 
 ---
 
-## Key Insights
-- Some product categories like "Electronice & Beauty" generate high revenue but lower profit margins  
-- Certain acquisition channels like "Organic channels" deliver better ROI than others  
-- A few cities contribute a major portion of total revenue                                 # (WE ARE NOT MENTIONING CITIES CAUSE OUR DATA HAVE 3000 DIFFERENT CITIES).
-- High-value customers significantly impact overall sales.
+## 🧩 Data Modeling Approach
+
+* Created an analytical view (`analytics_orders`) combining:
+
+  * Orders
+  * Customers
+  * Products
+  * Order Items
+* Handled **granularity mismatch** between transactional data and marketing spend
+* Built a **summarized marketing table** to ensure correct ROI calculation
 
 ---
 
-## Tools Used
-- SQL  
+## 📈 Key Metrics
+
+* Total Revenue
+* Total Profit
+* Total Orders
+* Profit Margin
+* ROI (Return on Investment by channel)
 
 ---
 
-## Data Limitations & Assumptions
-- The dataset was synthetically generated, so some pricing fields (`listed_price`, `selling_price`, `discount`) were not fully consistent.  
-- In several cases, `listed_price` and `selling_price` were equal, limiting discount-based analysis.  
-- `selling_price` was treated as the actual transaction value for revenue calculations.  
-- `cost_price` was used to calculate profit.  
-- Marketing spend data was aggregated at the channel level, so revenue and spend were aggregated before calculating ROI to avoid duplication issues.  
+## 📊 Dashboard Features
+
+* KPI cards for high-level performance tracking
+* Monthly revenue trend analysis
+* Category-wise revenue and profit breakdown
+* Top-performing cities by profit
+* Channel-wise order distribution and ROI
+* Interactive slicers for:
+
+  * Acquisition Channel
+  * Date (Month-level filtering)
 
 ---
 
-## Conclusion
-This project demonstrates, how raw transactional data can be transformed into actionable business insights, including revenue trends, profitability, and marketing performance.
+## 💡 Key Insights
+
+* Google Ads generated the highest ROI among all channels
+* Beauty category contributed the highest revenue
+* Revenue peaked during early months and declined toward year-end
+* Certain cities consistently outperformed others in profit generation
+
+---
+
+## ⚠️ Data Notes
+
+* Discount analysis was excluded due to uniform pricing in generated data
+* Marketing spend data was aggregated to align with transactional data
+
+---
+
+## 🖼️ Dashboard Preview
+
+![Dashboard Screenshot](dashboard/dashboard.png)
+
+---
+
+## 📌 Conclusion
+
+This project highlights how raw data can be transformed into meaningful insights using structured SQL queries and intuitive Power BI dashboards. It also demonstrates practical problem-solving such as handling data granularity issues and ensuring accurate KPI calculations.
+
+---
+
+## 🔗 Future Improvements
+
+* Add customer segmentation analysis
+* Include time-based marketing ROI trends
+* Enhance dashboard with additional drill-through features
+
+---
