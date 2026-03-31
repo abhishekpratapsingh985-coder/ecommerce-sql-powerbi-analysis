@@ -79,7 +79,8 @@ This project demonstrates an end-to-end data analysis workflow using SQL and Pow
 
 ## 🖼️ Dashboard Preview
 
-![Dashboard Screenshot](dashboard/dashboard.png)
+## 📊 Dashboard Preview
+![E-commerce Dashboard](dashboard_preview.png)
 
 ---
 
